@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Eu</a></li>
+                <li><a href="#">Estou</a></li>
+                <li class="dropdown">
+                    <a href="#">Sem</a>
+    
+                    <div class="dropdown-menu">
+                        <a href="#">Ideia</a>
+                        <a href="#">Para</a>
+                        <a href="#">Colocar</a>
+                    </div>
+                </li>
+                <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Aqui</a></li>
+        </nav>
+    </header>
+    <section>
+            <h1 class="title">Tarefas do dia</h1>
+
+            <img src="img/astra.png" alt="astra">
+
+            <ul id="list"></ul>
+
+            <form>
+                <input id="taskName" type="text" placeholder="Nova tarefa">
+                <button class="add-task-button" onclick="AddNewTask()"><i class="fa-solid fa-plus"></i> Adicionar</button>
+                <button class="remove-task-button" onclick="RemoveTasks()"><i class="fa-regular fa-trash-can"></i> Remover</button>
+            </form>
+    </section>
+    <footer>
+        <p>Copyright &copy; Wendell Bernardo</p>
+    </footer>
+</body>
+
+<script src="js/script.js"></script>
+<script src="https://kit.fontawesome.com/832e25fd4b.js" crossorigin="anonymous"></script>
+</html>

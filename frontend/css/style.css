@@ -1,0 +1,138 @@
+body{
+    background-color: #1c1c1c;
+    color: #ffff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+section{
+    padding: 24px;
+    text-align: center;
+}
+
+footer{
+    color:#993399;
+    text-align: center;
+}
+
+.title{
+    font-size: 48px;
+    color: #993399;
+}
+
+#list{
+    margin: auto;
+    width: 500px;
+    height: auto;
+    text-align: left;
+    background-color: transparent;
+    box-shadow: 0 0 2px #993399;
+    border-radius: 4px;
+    padding: 8px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.list-item{
+    margin-bottom: 24px;
+    font-size: 24px;
+    list-style-type: none;
+}
+
+#taskName{
+    height: 32px;
+    background-color: transparent;
+    color: #ffff;
+    border-color: #993399;
+    border-radius: 4px;
+    font-size: 16px;
+    padding: 8px;
+}
+
+.add-task-button{
+    font-size: 16px;
+    padding: 16px;
+    background-color: purple;
+    border-width: 0px;
+    border-radius: 4px;
+    color: #ffff;
+    font-weight: bold;
+}
+
+.add-task-button:hover{
+    cursor: pointer;
+    background-color: rgb(168, 2, 168);
+}
+
+.remove-task-button{
+    font-size: 16px;
+    padding: 16px;
+    background-color: crimson;
+    border-width: 0px;
+    border-radius: 4px;
+    color: #ffff;
+    font-weight: bold;
+}
+
+.remove-task-button:hover{
+    cursor: pointer;
+    background-color: rgb(252, 22, 68);
+}
+
+nav{
+    background-color: #252525;
+    margin: auto;
+    width: 570px;
+    height: auto;
+    border-radius: 4px;
+}
+
+nav li{
+    display: inline-block;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+nav li a{
+    display: inline-block;
+    color: #993399;
+    text-decoration: none;
+    padding: 15px;
+}
+
+nav li a:hover{
+    background-color: purple;
+    color: white;
+    border-radius: 4px;
+}
+
+.dropdown-menu{
+    position: absolute;
+    box-shadow: 0 0 2px black;
+    display: none;
+    background-color: #252525;
+    border-radius: 4px;
+}
+
+.dropdown-menu a{
+    display: block;
+    color: purple;
+    border-radius: 4px;
+}
+
+.dropdown:hover .dropdown-menu{
+    display: block;
+}
+
+.checkbox{
+    margin-right: 10px;
+    height: 20px;
+    width: 20px;
+    background-color: #66cc66;
+}
