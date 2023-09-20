@@ -26,3 +26,19 @@ function RemoveTasks(){
             document.getElementById(j).innerHTML = '';
     }
 }
+
+function ChangeTheme(color, type){
+    document.body.style.color = color;
+    document.getElementById('list').style.boxShadow = '0 0 2px ' + color;
+    document.getElementById('taskName').style.borderColor = color;
+    document.getElementById('addTask').setAttribute('class', 'add-task-button-' + type);
+
+    var links = document.querySelectorAll('a');
+    // Muda classe de todos os links <a>
+    for (var j = 0; j < links.length; j++) {
+        links[j].setAttribute('class', 'nav-item-' + type);
+    }
+
+    // Altera imagem
+    document.getElementById('centralImage').setAttribute('src', 'assets/img/' + type + '.png')
+}

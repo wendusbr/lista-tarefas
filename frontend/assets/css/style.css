@@ -1,6 +1,7 @@
+/* Tags */
 body{
     background-color: #1c1c1c;
-    color: #ffff;
+    color: #993399;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -17,18 +18,28 @@ section{
 }
 
 footer{
-    color:#993399;
     text-align: center;
+    margin: auto;
+    width: 570px;
+    height: auto;
 }
 
+img{
+    width: 250px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Title*/
 .title{
     font-size: 48px;
-    color: #993399;
 }
 
+/* List */
 #list{
     margin: auto;
-    width: 500px;
+    width: 570px;
     height: auto;
     text-align: left;
     background-color: transparent;
@@ -40,11 +51,13 @@ footer{
 }
 
 .list-item{
-    margin-bottom: 24px;
+    margin: 12px;
     font-size: 24px;
     list-style-type: none;
+    color: #ffff;
 }
 
+/* Input */
 #taskName{
     height: 32px;
     background-color: transparent;
@@ -55,7 +68,16 @@ footer{
     padding: 8px;
 }
 
-.add-task-button{
+/* Check-box */
+.checkbox{
+    margin-right: 10px;
+    height: 20px;
+    width: 20px;
+    background-color: #66cc66;
+}
+
+/* Buttons */
+.add-task-button-astra{
     font-size: 16px;
     padding: 16px;
     background-color: purple;
@@ -65,9 +87,54 @@ footer{
     font-weight: bold;
 }
 
-.add-task-button:hover{
+.add-task-button-astra:hover{
     cursor: pointer;
     background-color: rgb(168, 2, 168);
+}
+
+.add-task-button-jett{
+    font-size: 16px;
+    padding: 16px;
+    background-color: lightskyblue;
+    border-width: 0px;
+    border-radius: 4px;
+    color: #ffff;
+    font-weight: bold;
+}
+
+.add-task-button-jett:hover{
+    cursor: pointer;
+    background-color: #63C3FF;
+}
+
+.add-task-button-killjoy{
+    font-size: 16px;
+    padding: 16px;
+    background-color: goldenrod;
+    border-width: 0px;
+    border-radius: 4px;
+    color: #ffff;
+    font-weight: bold;
+}
+
+.add-task-button-killjoy:hover{
+    cursor: pointer;
+    background-color: gold;
+}
+
+.add-task-button-skye{
+    font-size: 16px;
+    padding: 16px;
+    background-color: #54ac54;
+    border-width: 0px;
+    border-radius: 4px;
+    color: #ffff;
+    font-weight: bold;
+}
+
+.add-task-button-skye:hover{
+    cursor: pointer;
+    background-color: #66cc66;
 }
 
 .remove-task-button{
@@ -85,6 +152,7 @@ footer{
     background-color: rgb(252, 22, 68);
 }
 
+/* Nav */
 nav{
     background-color: #252525;
     margin: auto;
@@ -99,15 +167,54 @@ nav li{
     margin-right: 20px;
 }
 
-nav li a{
+.nav-item-astra{
     display: inline-block;
     color: #993399;
     text-decoration: none;
     padding: 15px;
 }
 
-nav li a:hover{
+.nav-item-astra:hover{
     background-color: purple;
+    color: white;
+    border-radius: 4px;
+}
+
+.nav-item-jett{
+    display: inline-block;
+    color: #99CCFF;
+    text-decoration: none;
+    padding: 15px;
+}
+
+.nav-item-jett:hover{
+    background-color: #63C3FF;;
+    color: white;
+    border-radius: 4px;
+}
+
+.nav-item-killjoy{
+    display: inline-block;
+    color: gold;
+    text-decoration: none;
+    padding: 15px;
+}
+
+.nav-item-killjoy:hover{
+    background-color: goldenrod;
+    color: white;
+    border-radius: 4px;
+}
+
+.nav-item-skye{
+    display: inline-block;
+    color: #66cc66;
+    text-decoration: none;
+    padding: 15px;
+}
+
+.nav-item-skye:hover{
+    background-color: #54ac54;
     color: white;
     border-radius: 4px;
 }
@@ -118,21 +225,14 @@ nav li a:hover{
     display: none;
     background-color: #252525;
     border-radius: 4px;
+    width: 103px;
 }
 
 .dropdown-menu a{
     display: block;
-    color: purple;
     border-radius: 4px;
 }
 
 .dropdown:hover .dropdown-menu{
     display: block;
-}
-
-.checkbox{
-    margin-right: 10px;
-    height: 20px;
-    width: 20px;
-    background-color: #66cc66;
 }
